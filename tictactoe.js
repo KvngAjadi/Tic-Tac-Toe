@@ -78,3 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial state
   statusText.textContent = `Player ${currentPlayer}'s turn`;
 });
+const showWinnerPopup = (winner) => {
+    winnerMessage.textContent = winner === "No one" ? "It's a Draw!" : `🎉 Player ${winner} Wins!`;
+    winModal.classList.remove("hidden");
+  };
